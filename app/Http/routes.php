@@ -12,5 +12,7 @@
 */
 
 $app->get('/', function () use ($app) {
-    return $app->version();
+    $bigBen = [51.5007, 0.1246];
+
+    return App\Poi::where('AddressInfo.location', 'near', $bigBen)->limit(25)->get();
 });
