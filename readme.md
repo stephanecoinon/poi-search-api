@@ -9,9 +9,21 @@ MongoDB built-in geo-location search to find the nearest points to a given UK
 postcode. And we'll leverage [Postcodes.io](http://postcodes.io) to geo-locate
 the searched postcodes.
 
-I'll explain how to set it all up on [DigitalOcean](https://www.digitalocean.com)
+We'll explain how to set it all up on [DigitalOcean](https://www.digitalocean.com)
 so you can reuse this project to build an API with your own data source.
 
 ## How does the API work?
+
+
+## Test on local development
+
+We'll assume you already have PHP and composer installed.
+After cloning this repo, and before running `composer install`, you'll need to
+install the MongoDB extension for PHP which can be done like so on MacOS
+(for PHP 7.0):
+```
+    brew install php70-mongodb
+```
+
 
 ## Set up this API on DigitalOcean
